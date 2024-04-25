@@ -1,0 +1,28 @@
+{
+    "collection": {
+        "info": {
+            "name": "Test Collection",
+            "description": "Test Collection",
+            "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+        },
+        "item": [
+            {
+                "name": "Test POST Response",
+                "request": {
+                    "url": "https://echo.getpostman.com/headers",
+                    "method": "POST",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "body": {
+                        "mode": "raw",
+                        "raw": ""
+                    }
+                }
+            }
+        ]
+    }
+}
