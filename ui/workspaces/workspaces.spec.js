@@ -17,7 +17,7 @@ test('user can view created workspace in workspaces dropdown menu', async ({ pag
 
     const workspacesList = page.locator('.workspace-switcher__list');
     const createdWorkspace = workspacesList.getByText(workspaceData.workspace.name);
-    
+
     await expect(createdWorkspace).toBeVisible();
 });
 
@@ -30,6 +30,6 @@ test('user can view created workspace in all workspaces page', async ({ page }) 
 
     const workspacesList = page.getByTestId('workspace-list-element-heading');
     const createdWorkspace = workspacesList.getByText(workspaceData.workspace.name);
-    
+
     await expect(createdWorkspace).toBeVisible();
 });

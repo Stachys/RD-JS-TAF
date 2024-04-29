@@ -3,5 +3,5 @@ export const workspaceData = {
         name: 'test',
         type: 'personal',
         description: 'test',
-    }
-}
+    },
+};
