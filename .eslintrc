@@ -1,7 +1,10 @@
 {
     "root": true,
+    "plugins": ["wdio", "prettier"],
     "extends": [
-        "eslint:recommended"
+        "plugin:wdio/recommended",
+        "eslint:recommended",
+        "plugin:prettier/recommended"
     ],
     "parser": "@babel/eslint-parser",
     "parserOptions": {
@@ -16,12 +19,9 @@
         "node": true
     },
     "rules": {
-        "indent": ["error", 4],
         "no-trailing-spaces": "error",
-        "comma-dangle": ["error", "always-multiline"],
-        "semi": ["error", "always"],
         "eol-last": ["error", "always"],
-        "quotes": ["error", "single"]
+        "prettier/prettier": "error"
     },
     "ignorePatterns": ["reports/**"]
 }

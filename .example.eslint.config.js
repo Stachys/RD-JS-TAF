@@ -22,12 +22,12 @@ export default [
     },
     {
         rules: {
-            'indent': ['error', 4],
+            indent: ['error', 4],
             'no-trailing-spaces': 'error',
             'comma-dangle': ['error', 'always-multiline'],
-            'semi': ['error', 'always'],
+            semi: ['error', 'always'],
             'eol-last': ['error', 'always'],
-            'quotes': ['error', 'single'],
+            quotes: ['error', 'single'],
         },
     },
     {

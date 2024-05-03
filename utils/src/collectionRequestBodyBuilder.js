@@ -12,3 +12,7 @@ export function createBodyWithDates(currentDate, datesNumber) {
 
     return `{"dates":[${formattedDates.toString()}]}`;
 }
+
+export function justSomeExceptionFunc(message) {
+    throw new Error(message);
+}

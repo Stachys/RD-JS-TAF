@@ -37,19 +37,25 @@ POSTMAN_API_KEY=your-api-key
 
 You can run the following tests using the scripts defined in the `package.json` file:
 
-- **UI Tests**: Run UI tests using Playwright:
+-   **UI Tests**: Run UI tests using Playwright:
 
 ```bash
-npm run test:ui
+npm run test:ui:pw
 ```
 
-- **API Tests**: Run API tests using Mocha:
+-   **UI Tests**: Run UI tests using WDIO with Report Portal:
+
+```bash
+npm run test:ui:wdio
+```
+
+-   **API Tests**: Run API tests using Mocha:
 
 ```bash
 npm run test:api
 ```
 
-- **Unit Tests**: Run unit tests using Mocha:
+-   **Unit Tests**: Run unit tests using Mocha:
 
 ```bash
 npm run test:unit

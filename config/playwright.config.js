@@ -1,18 +1,18 @@
 import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
-    outputDir: '../reports/ui_tests_report',
+    outputDir: '../reports/ui_pw_tests_report',
 
     // Look for test files in the "tests" directory, relative to this configuration file.
-    testDir: '../ui',
+    testDir: '../ui_pw',
 
-    testMatch: 'ui/*/*spec.js',
+    testMatch: 'ui_pw/*/*spec.js',
 
     // Run all tests in parallel.
     fullyParallel: false,
 
     // Reporter to use
-    reporter: [['html', { open: 'on-failure', outputFolder: '../reports/ui_tests_results' }]],
+    reporter: [['html', { open: 'on-failure', outputFolder: '../reports/ui_pw_tests_results' }]],
 
     use: {
         headless: false,
